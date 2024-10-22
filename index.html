@@ -6,6 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  <script src="./index.js" defer></script>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,33 +26,33 @@
   <div class="container">
     <div class="main">
 
-      <form id="form" method="">
+      <form id="form" method="dialog">
         <!--input section-->
         <div class="inline">
           <div>
             <label for="day-input">Day</label>
-            <input type="text" name="" id="day-input" placeholder="DD">
-            <p class="error-msg-day" id="error-msg-day"></p>
+            <input type="text" onkeyup="numbersOnly(this)" maxlength="2" id="day-input" class="numeric-input" placeholder="DD">
+            <p class="error-msg" id="error-msg-day"></p>
           </div>
           <div>
             <label for="month-input">Month</label>
-            <input type="text" name="" id="month-input" placeholder="MM">
-            <p class="error-msg-day" id="error-msg-month"></p>
+            <input type="text" onkeyup="numbersOnly(this)" maxlength="2"  id="month-input" class="numeric-input" placeholder="MM">
+            <p class="error-msg" id="error-msg-month"></p>
           </div>
           <div>
             <label for="year-input">Year</label>
-            <input type="text" name="" id="year-input" placeholder="YYYY">
-            <p class="error-msg-day" id="error-msg-year"></p>
+            <input type="text" onkeyup="numbersOnly(this)" maxlength="4"  id="year-input" class="numeric-input" placeholder="YYYY">
+            <p class="error-msg" id="error-msg-year"></p>
           </div>
         </div>
         <!--age button section-->
         <div class="calc-age">
-          <button ><img src="./assets/images/icon-arrow.svg" alt="="></button><hr>
+          <button type="submit"><img src="./assets/images/icon-arrow.svg" alt="="></button><hr>
         </div>
         <!--age results button-->
         <div class="results">
           <div class="inline">
-            <h1 class="purple" id="years-output">--</h1> <h1 class="italic">years</h1>
+            <h1 class="purple" id="year-output">--</h1> <h1 class="italic">years</h1>
           </div>
           <div class="inline">
             <h1 class="purple" id="month-output">--</h1> <h1 class="italic">month</h1>
