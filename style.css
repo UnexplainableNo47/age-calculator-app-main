@@ -26,7 +26,7 @@
 }
 .main{
     width: 90vh;
-    height: 70vh;
+    height: 500px;
     padding: 2rem;
     background-color: var(--White);
     border-radius: 1.75rem 1.75rem 10.75rem 1.75rem;
@@ -81,7 +81,7 @@ hr{
 }
 button{
     position: absolute;
-    top: 35%;
+    top: 31%;
     width: 60px;
     height: 60px;
     background-color: var(--Purple);
@@ -115,7 +115,7 @@ h1{
 @media only screen and (max-width:500px){
     .main{
         width: min(500px,100%);
-        height: 70vh;
+        height: 500px;
         padding: 2rem;
         background-color: var(--White);
         border-radius: 1.75rem 1.75rem 10.75rem 1.75rem;
