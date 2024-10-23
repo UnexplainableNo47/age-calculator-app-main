@@ -24,7 +24,7 @@ form.addEventListener('submit', (e) =>{
         e.preventDefault()
     }
     else{
-        day_output.innerText = a.value()
+        day_output.innerText = 'a.value()'
     }
 })
 
@@ -55,9 +55,9 @@ function getAgeCalculatorErrors(day,month,year){
 function getAge(day_input,month_input,year_input){
     var d = new Date();
     
-    a = d.getDay();
-    b = d.getMonth();
-    c = d.getFullYear();
+    let a = d.getDay();
+    let b = d.getMonth();
+    let c = d.getFullYear();
 
     return a,b,c;
 }
